@@ -20,8 +20,8 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Command.CreateLeaveT
                 .MaximumLength(70).WithMessage("Maximum is 70 ");
 
             RuleFor(p => p.DefaultDays)
-                .GreaterThan(100).WithMessage("{PropertyName} cannot exceed 100")
-                .LessThan(1).WithMessage("{PropertyName} cannot be less than 1");
+                .LessThan(100).WithMessage("{PropertyName} cannot exceed 100")
+                .GreaterThan(1).WithMessage("{PropertyName} cannot be less than 1");
 
             RuleFor(q => q)
                 .MustAsync(LeaveTypeNameUnique)
