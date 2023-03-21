@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using HR.LeaveManagement.Application.Contracts;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +11,21 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveT
 {
     public class GetLeaveTypeQueryHandler : IRequestHandler<GetLeaveTypeQuery, List<LeaveTypeDto>>
     {
-        public Task<List<LeaveTypeDto>> Handle(GetLeaveTypeQuery request, CancellationToken cancellationToken)
+        public IMapper _mapper { get; }
+        public ILeaveTypeRepository _leaveTypeRepository { get; }
+
+        public GetLeaveTypeQueryHandler(IMapper mapper,ILeaveTypeRepository leaveTypeRepository)
         {
-            throw new NotImplementedException();
+            _mapper = mapper;
+            _leaveTypeRepository = leaveTypeRepository;
+        }
+
+    
+
+        public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypeQuery request, CancellationToken cancellationToken)
+        {
+            var leaveTypes = await _leaveTypeRepository.GetAsync();
+            return _mapper.Map<List<LeaveTypeDto>>(leaveTypes);
         }
     }
 }
