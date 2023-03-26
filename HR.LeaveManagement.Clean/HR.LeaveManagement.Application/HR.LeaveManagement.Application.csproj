@@ -18,4 +18,10 @@
     <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Contracts\Persistance\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\Persistance\" />
+  </ItemGroup>
 </Project>
