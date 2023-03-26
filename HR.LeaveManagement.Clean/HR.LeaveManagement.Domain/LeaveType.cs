@@ -11,3 +11,4 @@ namespace HR.LeaveManagement.Domain
         public DateTime? LastModifiedDate { get; set; }
     }
 }
+    
