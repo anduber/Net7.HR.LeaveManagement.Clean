@@ -20,8 +20,28 @@
 
   <ItemGroup>
     <None Remove="Contracts\Persistance\" />
+    <None Remove="Contracts\Email\" />
+    <None Remove="Models\" />
+    <None Remove="Models\Email\" />
+    <None Remove="Contracts\Logging\" />
+    <None Remove="Features\LeaveAllocation\" />
+    <None Remove="Features\LeaveAllocation\LeaveAllocation\" />
+    <None Remove="Features\LeaveAllocation\Queries\" />
+    <None Remove="Features\LeaveAllocation\Commands\CreateLeaveAllocation\" />
+    <None Remove="Features\LeaveAllocation\Commands\UpdateLeaveAllocation\" />
+    <None Remove="Features\LeaveAllocation\Commands\DeleteLeaveAllocation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\Persistance\" />
+    <Folder Include="Contracts\Email\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Email\" />
+    <Folder Include="Contracts\Logging\" />
+    <Folder Include="Features\LeaveAllocation\" />
+    <Folder Include="Features\LeaveAllocation\Commands\" />
+    <Folder Include="Features\LeaveAllocation\Queries\" />
+    <Folder Include="Features\LeaveAllocation\Commands\CreateLeaveAllocation\" />
+    <Folder Include="Features\LeaveAllocation\Commands\UpdateLeaveAllocation\" />
+    <Folder Include="Features\LeaveAllocation\Commands\DeleteLeaveAllocation\" />
   </ItemGroup>
 </Project>

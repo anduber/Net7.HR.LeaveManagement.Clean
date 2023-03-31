@@ -17,8 +17,10 @@
 
   <ItemGroup>
     <None Remove="Repositories\" />
+    <None Remove="Configurations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
+    <Folder Include="Configurations\" />
   </ItemGroup>
 </Project>

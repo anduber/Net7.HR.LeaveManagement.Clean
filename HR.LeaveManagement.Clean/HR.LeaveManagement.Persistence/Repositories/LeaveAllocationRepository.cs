@@ -9,7 +9,7 @@ namespace HR.LeaveManagement.Persistence.Repositories
     {
         public LeaveAllocationRepository(HrDatabaseContext hrDatabaseContext) : base(hrDatabaseContext)
         {
-            
+
         }
 
         public async Task AddAllocations(List<LeaveAllocation> allocations)
