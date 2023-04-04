@@ -31,8 +31,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Controllers\" />
+    <None Remove="Middleware\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

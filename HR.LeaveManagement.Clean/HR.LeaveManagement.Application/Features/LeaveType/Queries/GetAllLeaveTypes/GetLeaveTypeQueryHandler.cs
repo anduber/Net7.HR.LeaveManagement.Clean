@@ -13,7 +13,6 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveT
     public class GetLeaveTypeQueryHandler : IRequestHandler<GetLeaveTypeQuery, List<LeaveTypeDto>>
     {
         private readonly IAppLogger<GetLeaveTypeQueryHandler> _logger;
-
         public IMapper _mapper { get; }
         public ILeaveTypeRepository _leaveTypeRepository { get; }
 

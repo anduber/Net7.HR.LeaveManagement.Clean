@@ -30,6 +30,16 @@
     <None Remove="Features\LeaveAllocation\Commands\CreateLeaveAllocation\" />
     <None Remove="Features\LeaveAllocation\Commands\UpdateLeaveAllocation\" />
     <None Remove="Features\LeaveAllocation\Commands\DeleteLeaveAllocation\" />
+    <None Remove="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
+    <None Remove="Features\LeaveAllocation\Queries\GetLeaveAllocations\" />
+    <None Remove="Features\LeaveRequest\" />
+    <None Remove="Features\LeaveRequest\LeaveRequest\" />
+    <None Remove="Features\LeaveRequest\Commands\" />
+    <None Remove="Features\LeaveRequest\Shared\" />
+    <None Remove="Features\LeaveRequest\Commands\CreateLeaveRequest\" />
+    <None Remove="Features\LeaveRequest\Queries\" />
+    <None Remove="Features\LeaveRequest\Queries\GetLeaveRequestDetail\" />
+    <None Remove="Features\LeaveRequest\Queries\GetLeaveRequestList\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\Persistance\" />
@@ -43,5 +53,14 @@
     <Folder Include="Features\LeaveAllocation\Commands\CreateLeaveAllocation\" />
     <Folder Include="Features\LeaveAllocation\Commands\UpdateLeaveAllocation\" />
     <Folder Include="Features\LeaveAllocation\Commands\DeleteLeaveAllocation\" />
+    <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
+    <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocations\" />
+    <Folder Include="Features\LeaveRequest\" />
+    <Folder Include="Features\LeaveRequest\Commands\" />
+    <Folder Include="Features\LeaveRequest\Shared\" />
+    <Folder Include="Features\LeaveRequest\Commands\CreateLeaveRequest\" />
+    <Folder Include="Features\LeaveRequest\Queries\" />
+    <Folder Include="Features\LeaveRequest\Queries\GetLeaveRequestDetail\" />
+    <Folder Include="Features\LeaveRequest\Queries\GetLeaveRequestList\" />
   </ItemGroup>
 </Project>
